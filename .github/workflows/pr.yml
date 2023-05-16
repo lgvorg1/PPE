@@ -39,5 +39,5 @@ jobs:
           echo with MY_SECRET.
           echo 1- ${{secrets.MAIL_CONNECTION}}
           echo 2- ${{secrets.MAIL_CONNECTION_kk}}
-          echo 3- ${{secrets.MY_SECRET}
+          echo 3- ${{secrets.MY_SECRET}}
           
