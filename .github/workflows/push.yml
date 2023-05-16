@@ -40,3 +40,12 @@ jobs:
           echo 1- ${{secrets.MAIL_CONNECTION}}
           echo 2- ${{secrets.MAIL_CONNECTION_kk}}
           echo 3- ${{secrets.MY_SECRET}}
+      
+      - name: Build
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET }}
+        run: |
+          echo do build
+          chmod +x build.sh
+          ./build.sh
+          cat build.out
